@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import os
-import aws_cdk.core as cdk
+import aws_cdk as core
 from stacks.app_stack import BookManagementAppStack
 
-app = cdk.App()
+app = core.App()
 BookManagementAppStack(app, "BookManagementAppStack")
 app.synth()
